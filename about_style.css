@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OPTIAmway";
+  src: url("OPTIAmway.ttf.woff") format("woff"),
+    url("OPTIAmway.ttf.svg#OPTIAmway") format("svg"), url("OPTIAmway.ttf.eot"),
+    url("OPTIAmway.eot?#iefix") format("embedded-opentype");
+}
+
+html {
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.container {
+  /* width: 1200px; */
+  width: 97%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: auto;
+}
+
+.mcmaster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100px 700px;
+  /* max-height: 570px; */
+  align-items: start;
+  margin-top: 1.5%;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+
+.main-header {
+  /* display: grid; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* justify-content: left; */
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  /* row-gap: 10px; */
+}
+
+article {
+  /* margin-bottom: 5px; */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.menu {
+  font-size: 14px;
+  text-align: left;
+  grid-column: 1;
+  grid-row: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu a:link {
+  margin-right: 40px;
+  /* margin-top: 5px; */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.menu a:link:last-child {
+  margin-right: 0;
+}
+
+.menu a:link:nth-child(1) {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 86%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.edu-table ul li {
+  margin: 0;
+  padding: 6px 0 6px 36px;
+  list-style: none;
+  background-image: url("img/ed.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 0px;
+  background-size: 25px;
+  /* font-size: 18px; */
+}
+
+.edu-table ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.school {
+  color: #6b7280;
+}
+
+.ri-table ul li {
+  margin-left: 18px;
+  padding-top: 0px;
+  padding-bottom: 6px;
+  /* font-size: 18px; */
+}
+
+.ri-table {
+  margin-bottom: 0px;
+}
+
+.me {
+  margin-bottom: 10px;
+}
+
+.pic-and-text {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.me-text {
+  height: 100%;
+  width: 75%;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  text-decoration: underline #ea580c;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* a:active {
+  font-style: italic;
+} */
+
+/* text font size */
+p,
+li {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.name {
+  letter-spacing: 2px;
+}
+
+.main-header {
+  /* background-color: #f5f5f4; */
+  padding: 0px 0px 0px 0px;
+  /* font-family: "Bellefair"; */
+  font-family: "OPTIAmway";
+  font-size: 32px;
+  /* font-weight: bold; */
+  line-height: 100%;
+}
+
+a.name:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.name:visited {
+  color: black;
+}
+
+a.name:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  /* text-decoration: underline #ea580c; */
+  /* text-decoration-thickness: 1px; */
+  /* text-underline-offset: 4px; */
+}

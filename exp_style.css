@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OPTIAmway";
+  src: url("OPTIAmway.ttf.woff") format("woff"),
+    url("OPTIAmway.ttf.svg#OPTIAmway") format("svg"), url("OPTIAmway.ttf.eot"),
+    url("OPTIAmway.eot?#iefix") format("embedded-opentype");
+}
+
+html {
+  overflow: hidden;
+}
+
+.container {
+  /* width: 1200px; */
+  width: 97%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: auto;
+}
+
+.mcmaster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* .name {
+  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100px 1fr;
+  align-items: start;
+  margin-top: 1.5%;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+
+.main-header {
+  /* display: grid; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* justify-content: left; */
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  /* row-gap: 10px; */
+}
+
+.name {
+  letter-spacing: 2px;
+}
+
+.main-header {
+  /* background-color: #f5f5f4; */
+  padding: 0px 0px 0px 0px;
+  /* font-family: "Bellefair"; */
+  font-family: "OPTIAmway";
+  font-size: 32px;
+  /* font-weight: bold; */
+  line-height: 100%;
+}
+
+article {
+  margin-bottom: 5px;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.menu {
+  font-size: 14px;
+  text-align: left;
+  grid-column: 1;
+  grid-row: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu a:link {
+  margin-right: 40px;
+  /* margin-top: 5px; */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.menu a:link:last-child {
+  margin-right: 0;
+}
+
+.menu a:link:nth-child(2) {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  text-decoration: underline #ea580c;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* a:active {
+  font-style: italic;
+} */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+*,
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  perspective: 800px;
+}
+body {
+  /* background-color: #227093; */
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 10px rgb(218, 218, 218);
+}
+
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid #4b5563; /* the time line */
+  padding: 10px 30px;
+  margin-left: 10px;
+  height: 100%; /* adjust this to change the time line length */
+}
+
+.timeline ul li {
+  height: 25%; /* adjust this to change the item box height */
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.timeline ul li span {
+  display: inline-block;
+  /* background-color: #d1d1d1; */
+  border-radius: 25px;
+  padding: 2px 0px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.timeline ul li span {
+  color: #4b5563;
+  font-weight: bold;
+}
+
+.timeline ul li .content h3 {
+  /* color: #34ace0; */
+  font-size: 18px;
+  padding-top: 5px;
+
+  font-weight: normal;
+}
+
+.timeline ul li .content p {
+  padding: 5px 0px 5px 0px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.timeline ul li:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #6b7280;
+  border-radius: 50%;
+  left: -36px;
+  top: 28px;
+  transition: 0.5s;
+}
+
+.timeline ul li:hover {
+  /* background-color: #c2c2c2; */
+  box-shadow: 0px 0px 10px 2px rgb(184, 184, 184);
+}
+
+.timeline ul li:hover:before {
+  background-color: #6b7280;
+  box-shadow: 0px 0px 10px 2px rgb(184, 184, 184);
+}
+
+.timeline {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+a.name:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.name:visited {
+  color: black;
+}
+
+a.name:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  /* text-decoration: underline #ea580c; */
+  /* text-decoration-thickness: 1px; */
+  /* text-underline-offset: 4px; */
+}
+
+.timeline {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

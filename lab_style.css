@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OPTIAmway";
+  src: url("OPTIAmway.ttf.woff") format("woff"),
+    url("OPTIAmway.ttf.svg#OPTIAmway") format("svg"), url("OPTIAmway.ttf.eot"),
+    url("OPTIAmway.eot?#iefix") format("embedded-opentype");
+}
+
+.container {
+  /* width: 1200px; */
+  width: 97%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: auto;
+}
+
+.mcmaster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 100px 1fr;
+  align-items: start;
+  margin-top: 1.5%;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+
+.main-header {
+  /* display: grid; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* justify-content: left; */
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  /* row-gap: 10px; */
+}
+
+article {
+  margin-bottom: 5px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.menu {
+  font-size: 14px;
+  text-align: left;
+  grid-column: 1;
+  grid-row: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu a:link {
+  margin-right: 40px;
+  /* margin-top: 5px; */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.menu a:link:last-child {
+  margin-right: 0;
+}
+
+.menu a:link:nth-child(6) {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  text-decoration: underline #ea580c;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* a:active {
+  font-style: italic;
+} */
+
+p {
+  font-size: 24px;
+}
+
+.name {
+  letter-spacing: 2px;
+}
+
+.main-header {
+  /* background-color: #f5f5f4; */
+  padding: 0px 0px 0px 0px;
+  /* font-family: "Bellefair"; */
+  font-family: "OPTIAmway";
+  font-size: 32px;
+  /* font-weight: bold; */
+  line-height: 100%;
+}
+
+a.name:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.name:visited {
+  color: black;
+}
+
+a.name:hover {
+  color: #ea580c;
+  /* font-weight: bold; */
+  /* text-decoration: underline #ea580c; */
+  /* text-decoration-thickness: 1px; */
+  /* text-underline-offset: 4px; */
+}
