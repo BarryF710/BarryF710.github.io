@@ -152,6 +152,22 @@ article {
   height: 30px;
   background-size: 45px;
   /* font-size: 18px; */
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.github ul li {
+  margin: 0px;
+  padding: 6px 0 6px 28px;
+  padding-left: 60px;
+  list-style: none;
+  background-image: url("img/github.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  text-align: left top;
+  height: 30px;
+  background-size: 45px;
+  /* font-size: 18px; */
   margin-bottom: 0px;
   padding-top: 15px;
 }
