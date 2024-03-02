@@ -10,6 +10,24 @@
     url("OPTIAmway.eot?#iefix") format("embedded-opentype");
 }
 
+@font-face {
+  font-family: "asulregular";
+  src: url('asul-regular-webfont.woff2') format('woff2'),
+       url('asul-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "marcellus_scregular";
+  src: url('marcellussc-regular-webfont.woff2') format('woff2'),
+       url('marcellussc-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .container {
   /* width: 1200px; */
   width: 97%;
@@ -67,10 +85,20 @@
   /* background-color: #f5f5f4; */
   padding: 0px 0px 0px 0px;
   /* font-family: "Bellefair"; */
-  font-family: "OPTIAmway";
+  font-family: "marcellus_scregular";
   font-size: 32px;
-  /* font-weight: bold; */
+  font-weight: bold;
   line-height: 100%;
+}
+
+.custom-y {
+  font-family: "OPTIAmway";
+  font-size: 30px;
+}
+
+.custom-e {
+  font-family: "OPTIAmway";
+  font-size: 30px;
 }
 
 article {
@@ -182,9 +210,9 @@ a:visited {
 }
 
 a:hover {
-  color: #ea580c;
+  color: #0504af;
   /* font-weight: bold; */
-  text-decoration: underline #ea580c;
+  text-decoration: underline #0504af;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
@@ -230,9 +258,9 @@ a.name:visited {
 }
 
 a.name:hover {
-  color: #ea580c;
+  color: #0504af;
   /* font-weight: bold; */
-  /* text-decoration: underline #ea580c; */
+  /* text-decoration: underline #0504af; */
   /* text-decoration-thickness: 1px; */
   /* text-underline-offset: 4px; */
 }
