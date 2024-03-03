@@ -28,6 +28,16 @@
 
 }
 
+@font-face {
+  font-family: 'FaberDrei-Normalreduced';
+  src:url('FaberDrei-Normalreduced.ttf.woff') format('woff'),
+      url('FaberDrei-Normalreduced.ttf.svg#FaberDrei-Normalreduced') format('svg'),
+      url('FaberDrei-Normalreduced.ttf.eot'),
+      url('FaberDrei-Normalreduced.ttf.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+}
+
 .container {
   /* width: 1200px; */
   width: 97%;
@@ -122,9 +132,9 @@ a:visited {
 }
 
 a:hover {
-  color: #0504af;
+  color: #0006ce;
   /* font-weight: bold; */
-  text-decoration: underline #0504af;
+  text-decoration: underline #0006ce;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
@@ -135,6 +145,7 @@ a:hover {
 
 p {
   font-size: 24px;
+  color: #0006ce;
 }
 
 .name {
@@ -161,6 +172,11 @@ p {
   font-size: 30px;
 }
 
+.coming-soon {
+  font-family: "FaberDrei-Normalreduced";
+  font-weight: bold;
+}
+
 a.name:link {
   color: black;
   text-decoration: none;
@@ -171,9 +187,9 @@ a.name:visited {
 }
 
 a.name:hover {
-  color: #0504af;
+  color: #0006ce;
   /* font-weight: bold; */
-  /* text-decoration: underline #0504af; */
+  /* text-decoration: underline #0006ce; */
   /* text-decoration-thickness: 1px; */
   /* text-underline-offset: 4px; */
 }

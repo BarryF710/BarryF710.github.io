@@ -149,9 +149,9 @@ a:visited {
 }
 
 a:hover {
-  color: #0504af;
+  color: #0006ce;
   /* font-weight: bold; */
-  text-decoration: underline #0504af;
+  text-decoration: underline #0006ce;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
@@ -290,9 +290,9 @@ a.name:visited {
 }
 
 a.name:hover {
-  color: #0504af;
+  color: #0006ce;
   /* font-weight: bold; */
-  /* text-decoration: underline #0504af; */
+  /* text-decoration: underline #0006ce; */
   /* text-decoration-thickness: 1px; */
   /* text-underline-offset: 4px; */
 }
