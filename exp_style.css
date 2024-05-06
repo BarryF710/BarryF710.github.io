@@ -200,7 +200,7 @@ body {
 }
 
 .timeline ul li {
-  height: 20%; /* adjust this to change the item box height */
+  height: 16.6667%; /* adjust this to change the item box height */
   padding: 20px 20px;
   position: relative;
   cursor: pointer;
