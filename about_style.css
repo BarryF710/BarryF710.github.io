@@ -104,7 +104,7 @@ article {
 }
 
 .menu a:link {
-  margin-right: 40px;
+  /* margin-right: 40px; */
   /* margin-top: 5px; */
   margin-bottom: 15px;
   display: block;
@@ -247,4 +247,58 @@ a.name:hover {
   /* text-decoration: underline #0006ce; */
   /* text-decoration-thickness: 1px; */
   /* text-underline-offset: 4px; */
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 20.5% 79.5%;
+    grid-template-rows: auto;
+    margin-top: 0px;
+    margin-left: 4px;
+  }
+
+  .main-header {
+    justify-self: left;
+    text-align: left;
+  }
+
+  .menu {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .content {
+    max-height: 800px;
+    max-width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
+  .pic-and-text {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .me-pic {
+    margin: 0 auto;
+  }
+
+  .me-text {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
 }
