@@ -301,4 +301,8 @@ a.name:hover {
   li {
     font-size: 16px;
   }
+
+  .interest {
+    margin-bottom: 110px;
+  }
 }
