@@ -91,7 +91,7 @@ article {
 }
 
 .menu {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   text-align: left;
   grid-column: 1;
   grid-row: 2;
@@ -140,20 +140,20 @@ a:hover {
   padding: 0rem 0rem 0rem 0rem;
   /* font-family: "Bellefair"; */
   font-family: "marcellus_scregular";
-  font-size: 3.2rem;
-  font-weight: bold;
+  font-size: 4.4rem;
+  font-weight: 550;
   line-height: 100%;
 }
 
 .custom-y {
   font-family: "OPTIAmway";
-  font-size: 3rem;
+  font-size: 4.125rem; /* 3/3.2 times */
 }
 
-.custom-e {
+/* .custom-e {
   font-family: "OPTIAmway";
   font-size: 3rem;
-}
+} */
 
 a.name:link {
   color: black;
