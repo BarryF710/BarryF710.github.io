@@ -315,7 +315,7 @@ a.name:hover {
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
-    grid-template-columns: 20.5% 79.5%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: auto;
     margin-top: 0px;
     margin-left: 4px;
@@ -324,6 +324,7 @@ a.name:hover {
   .menu {
     text-align: left;
     margin-top: 20px;
+    font-size: 1.44rem;
     /* max-width: 68px; */
   }
 
