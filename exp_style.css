@@ -321,6 +321,13 @@ a.name:hover {
     margin-left: 4px;
   }
 
+  .main-header {
+    transform: scale(0.8);
+    transform-origin: top left;
+    justify-self: left;
+    text-align: left;
+  }
+
   .menu {
     text-align: left;
     margin-top: 20px;
@@ -339,4 +346,11 @@ a.name:hover {
     display: inline-block;
     text-align: left;
   }
+
+  .timeline {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
 }
