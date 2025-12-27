@@ -265,7 +265,7 @@ h2 {
 }
 
 .cards::-webkit-scrollbar-thumb {
-  background: var(--darkorange);
+  background: transparent;
 }
 
 .cards::-webkit-scrollbar-track {
