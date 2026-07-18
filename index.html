@@ -13,34 +13,87 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <div>
-          <!-- <a class="name" href="index.html">BARR<span class="custom-y">Y</span><br />CH<span class="custom-e">E</span>N</a> -->
-          <a class="name" href="index.html">BARR<span class="custom-y">Y</span></a>
-          <!-- <img class="logo" src="img/bc.jpeg" alt="logo" height="150" /> -->
-          <!-- <h1 class="name">Barry Chen</h1> -->
-        </div>
+        <a class="name" href="index.html">
+          BARR<span class="custom-y">Y</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </header>
 
-      <div class="menu">
+      <nav class="menu" id="main-menu">
         <a href="about.html">About</a>
         <a href="exp.html">Experience</a>
         <a href="prj.html">Project</a>
         <a href="ctc.html">Contact</a>
-        <a href="doc/CV.pdf" target="_blank"
-          >Resume <img src="img/ext.png" alt="ext" height="12px"
-        /></a>
-        <a href="lab.html"
-          >Blog <img src="img/ext.png" alt="ext" height="12px"
-        /></a>
-      </div>
+
+        <a href="doc/CV.pdf" target="_blank">
+          Resume
+          <img src="img/ext.png" alt="" height="12" />
+        </a>
+
+        <a href="lab.html">
+          Blog
+          <img src="img/ext.png" alt="" height="12" />
+        </a>
+      </nav>
 
       <article>
-        <img class="mcmaster" src="img/uoft_c1.jpg" alt="mcmaster"/>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="img/uoft_c2.jpg"
+          />
+
+          <img
+            class="mcmaster"
+            src="img/uoft_c1.jpg"
+            alt="University of Toronto"
+          />
+        </picture>
       </article>
 
       <!-- <footer>
         <p>Version 1.0</p>
       </footer> -->
     </div>
+
+    <script>
+      const menuButton = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = menu.classList.toggle("is-open");
+
+        menuButton.classList.toggle("is-open", isOpen);
+        document.body.classList.toggle("menu-open", isOpen);
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.remove("is-open");
+          menuButton.classList.remove("is-open");
+          document.body.classList.remove("menu-open");
+
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+        });
+      });
+    </script>
   </body>
 </html>
